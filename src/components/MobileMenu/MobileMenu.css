@@ -1,0 +1,36 @@
+.mobile-menu {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    inset: 0;
+    background: var(--bg-primary);
+    z-index: 850;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu a {
+    font-size: 1.6rem;
+    font-family: var(--f-head);
+    font-weight: 700;
+    color: var(--t1);
+    transition: color var(--tf);
+}
+
+.mobile-menu a:not(.button-primary):hover {
+    color: var(--gold);
+}
+
+.mobile-menu .button-primary {
+    color: #150e00;
+}
+
+@media (min-width: 992px) {
+    .mobile-menu {
+        display: none;
+    }
+}

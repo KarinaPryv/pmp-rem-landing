@@ -1,0 +1,90 @@
+:root {
+    /* Background */
+
+    --bg-primary: #05070e;
+    --bg-secondary: #080c18;
+    --bg-tertiary: #0c1120;
+
+    --bg-card: #101826;
+    --bg-card-hover: #141f30;
+
+    /* Gold */
+
+    --gold: #c9973b;
+    --gold-light: #e6b85c;
+
+    --red: #c90202;
+
+    --gold-transparent: rgba(201, 151, 59, 0.12);
+    --gold-glow: rgba(201, 151, 59, 0.25);
+
+    --border-gold: rgba(201, 151, 59, 0.28);
+
+    /* Blue */
+
+    --blue: #3e72ec;
+    --blue-light: #6090ff;
+
+    --blue-transparent: rgba(62, 114, 236, 0.12);
+
+    /* Text */
+
+    --text-primary: #edf0fa;
+    --text-secondary: #8892ae;
+    --text-tertiary: #4e5770;
+
+    /* Borders */
+
+    --border-primary: rgba(255, 255, 255, 0.04);
+    --border-secondary: rgba(255, 255, 255, 0.08);
+
+    /* Gradients */
+
+    --gradient-gold: linear-gradient(90deg, #c9973b 0%, #e6b85c 100%);
+
+    --gradient-blue: linear-gradient(90deg, #3e72ec 0%, #6090ff 100%);
+
+    --gradient-card: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.03) 0%,
+        transparent 100%
+    );
+
+    --gradient-hero: radial-gradient(
+        ellipse 80% 60% at 70% 40%,
+        rgba(62, 114, 236, 0.08) 0%,
+        transparent 70%
+    );
+
+    /* Typography */
+
+    --font-heading: 'Manrope', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Layout */
+
+    --section-padding-y: 110px;
+
+    --container-width: 1240px;
+    --container-padding-x: 24px;
+
+    /* Animations */
+
+    --ease: cubic-bezier(0.16, 1, 0.3, 1);
+
+    --transition-fast: 0.2s var(--ease);
+    --transition-medium: 0.45s var(--ease);
+
+    /* Radius */
+
+    --radius-small: 8px;
+    --radius-medium: 14px;
+    --radius-large: 20px;
+    --radius-extra-large: 28px;
+}
+
+@media (max-width: 960px) {
+    :root {
+        --section-padding-y: 76px;
+    }
+}

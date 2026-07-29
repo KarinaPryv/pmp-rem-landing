@@ -1,0 +1,35 @@
+.about-checklist-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.about-check {
+    width: 28px;
+    height: 28px;
+    background: var(--gold-transparent);
+    border: 1px solid var(--border-gold);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--gold);
+    font-size: 0.72rem;
+    font-weight: 700;
+    margin-top: 1px;
+}
+
+.about-checklist-body h4 {
+    font-size: 0.97rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+}
+
+.about-checklist-body p {
+    font-size: 0.845rem;
+    color: var(--text-secondary);
+    line-height: 1.65;
+}

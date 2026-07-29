@@ -1,0 +1,75 @@
+.hamburger-button {
+    position: relative;
+    display: none;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 12px;
+    background: transparent;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.hamburger-button:hover {
+    background: var(--gold-transparent);
+    border: 1px solid var(--border-gold);
+}
+
+.hamburger-button:hover span {
+    background: var(--gold);
+}
+
+.hamburger-button span {
+    position: absolute;
+    left: 50%;
+    border-radius: 999px;
+    transform: translateX(-50%);
+    transition:
+        top var(--transition-fast) ease,
+        transform var(--transition-fast) ease,
+        opacity var(--transition-fast) ease;
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text-primary);
+    border-radius: 2px;
+}
+
+.hamburger-button span:nth-child(1) {
+    top: 14px;
+}
+
+.hamburger-button span:nth-child(2) {
+    top: 21px;
+}
+
+.hamburger-button span:nth-child(3) {
+    top: 28px;
+}
+
+.hamburger-button-open span:nth-child(1) {
+    top: 21px;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.hamburger-button-open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-button-open span:nth-child(3) {
+    top: 21px;
+    transform: translateX(-50%) rotate(-45deg);
+}
+
+.hamburger-button:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 3px;
+}
+
+@media (max-width: 992px) {
+    .hamburger-button {
+        display: block;
+    }
+}

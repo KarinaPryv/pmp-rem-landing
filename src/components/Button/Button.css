@@ -1,0 +1,46 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-family: var(--font-heading);
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    transition: var(--transition-fast);
+}
+
+.button-icon {
+    display: flex;
+    align-items: center;
+}
+
+.button-primary {
+    background: var(--gradient-gold);
+    color: #150e00;
+}
+
+.button-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 38px var(--gold-glow);
+}
+
+.button-outline {
+    background: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--border-secondary);
+}
+
+.button-outline:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: var(--border-gold);
+    color: var(--gold-light);
+    transform: translateY(-2px);
+}

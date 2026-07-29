@@ -1,0 +1,38 @@
+.animated-block {
+    opacity: 0;
+
+    transition:
+        opacity 0.75s var(--ease),
+        transform 0.75s var(--ease);
+
+    will-change: opacity, transform;
+}
+
+.animated-block-up {
+    transform: translateY(40px);
+}
+
+.animated-block-left {
+    transform: translateX(-40px);
+}
+
+.animated-block-right {
+    transform: translateX(40px);
+}
+
+.animated-block-scale {
+    transform: scale(0.94);
+}
+
+.animated-block-visible {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animated-block {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
