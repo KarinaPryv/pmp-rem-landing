@@ -7,6 +7,9 @@ body {
     background: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.65;
+    transition:
+        background var(--transition-medium),
+        color var(--transition-medium);
 }
 
 main {

@@ -5,6 +5,7 @@ import HamburgerButton from '../HamburgerButton/HamburgerButton';
 import MobileMenu from '../MobileMenu/MobileMenu';
 import Navigation from '../Navigation/Navigation';
 import Logo from '../Logo/Logo';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 import './Header.css';
 
@@ -43,6 +44,8 @@ function Header() {
                     <Navigation />
 
                     <div className='header-actions'>
+                        <ThemeToggle />
+
                         <Button
                             to='/contact'
                             variant='primary'
