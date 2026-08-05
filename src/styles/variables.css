@@ -44,6 +44,12 @@
 
     --gradient-blue: linear-gradient(90deg, #3e72ec 0%, #6090ff 100%);
 
+    --gradient-footer-top: linear-gradient(
+        90deg,
+        var(--gold) 0%,
+        var(--blue-light) 100%
+    );
+
     --gradient-card: linear-gradient(
         145deg,
         rgba(255, 255, 255, 0.03) 0%,
