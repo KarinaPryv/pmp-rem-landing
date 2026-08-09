@@ -45,15 +45,23 @@ const AboutSection = () => {
                         </div>
                     </div>
 
-                    <div className='about-grid'>
-                        {aboutCards.map((card) => (
-                            <AnimatedBlock
-                                animation='right'
-                                key={card.id}
-                            >
-                                <AboutCard {...card} />
-                            </AnimatedBlock>
-                        ))}
+                    <div className='about-cards-column'>
+                        <AnimatedBlock animation='right'>
+                            <div className='about-subcaption'>
+                                <span>Як ми працюємо</span>
+                            </div>
+                        </AnimatedBlock>
+
+                        <div className='about-grid'>
+                            {aboutCards.map((card) => (
+                                <AnimatedBlock
+                                    animation='right'
+                                    key={card.id}
+                                >
+                                    <AboutCard {...card} />
+                                </AnimatedBlock>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>

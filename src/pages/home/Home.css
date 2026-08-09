@@ -272,6 +272,38 @@
     gap: 22px;
 }
 
+.about-cards-column {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.about-subcaption {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 16px;
+}
+
+.about-subcaption::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 1.5px;
+    background: var(--text-tertiary);
+    border-radius: 1px;
+    flex-shrink: 0;
+}
+
+.about-subcaption span {
+    font-family: var(--font-heading);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;

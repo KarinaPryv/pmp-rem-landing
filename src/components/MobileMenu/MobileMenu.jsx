@@ -3,6 +3,7 @@ import AppLink from '../AppLink/AppLink';
 import Button from '../Button/Button';
 
 import { navigationItems } from '../../configs/navigationConfig';
+import { HOME_SECTION_IDS } from '../../constants/sectionIds';
 
 import './MobileMenu.css';
 
@@ -25,11 +26,11 @@ function MobileMenu({ isOpen, onClose }) {
             ))}
 
             <Button
-                to='/contact'
+                to={`/#${HOME_SECTION_IDS.contact}`}
                 className='mobile-menu-button'
                 onClick={onClose}
             >
-                Start Cooperation
+                Розпочати співпрацю
             </Button>
         </div>
     );

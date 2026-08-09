@@ -8,8 +8,8 @@ body {
     color: var(--text-primary);
     line-height: 1.65;
     transition:
-        background var(--transition-medium),
-        color var(--transition-medium);
+        background var(--transition-fast),
+        color var(--transition-fast);
 }
 
 main {

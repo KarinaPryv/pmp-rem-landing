@@ -14,7 +14,7 @@
 }
 
 .mobile-menu a {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-family: var(--f-head);
     font-weight: 700;
     color: var(--t1);
@@ -27,6 +27,12 @@
 
 .mobile-menu .button-primary {
     color: #150e00;
+}
+
+@media (min-width: 576px) {
+    .mobile-menu-button {
+        display: none;
+    }
 }
 
 @media (min-width: 992px) {

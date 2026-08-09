@@ -1,5 +1,8 @@
 import { FaLocationDot, FaEnvelope, FaPhone } from 'react-icons/fa6';
 
+export const PHONE_LINK = 'tel:+38097XXXXXXX';
+export const PHONE_LABEL = '+38 (097) XXX-XX-XX';
+
 export const contactInfoItems = [
     {
         id: 'address',
@@ -18,7 +21,7 @@ export const contactInfoItems = [
         id: 'phone',
         icon: FaPhone,
         title: 'Телефон',
-        link: 'tel:+38097XXXXXXX',
-        label: '+38 (097) XXX-XX-XX',
+        link: PHONE_LINK,
+        label: PHONE_LABEL,
     },
 ];

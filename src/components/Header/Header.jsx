@@ -7,6 +7,8 @@ import Navigation from '../Navigation/Navigation';
 import Logo from '../Logo/Logo';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
+import { HOME_SECTION_IDS } from '../../constants/sectionIds';
+
 import './Header.css';
 
 function Header() {
@@ -47,7 +49,7 @@ function Header() {
                         <ThemeToggle />
 
                         <Button
-                            to='/contact'
+                            to={`/#${HOME_SECTION_IDS.contact}`}
                             variant='primary'
                         >
                             Розпочати співпрацю

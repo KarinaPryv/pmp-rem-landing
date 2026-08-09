@@ -1,4 +1,5 @@
 import { HOME_SECTION_IDS } from '../../../constants/sectionIds';
+import { PHONE_LINK } from '../../../configs/contactConfig';
 
 import ArrowIcon from '../../../assets/icons/ArrowIcon';
 import Button from '../../../components/Button/Button';
@@ -13,13 +14,13 @@ function CooperationSection() {
                         label='Готові до співпраці'
                         title={
                             <>
-                                Комплексні рішення для{' '}
+                                Розпочнімо{' '}
                                 <span className='text-gradient-gold'>
-                                    вашого проєкту
+                                    ваш проєкт разом
                                 </span>
                             </>
                         }
-                        description="Зв'яжіться з нами, щоб отримати професійну консультацію та індивідуальне рішення для вашого об'єкта."
+                        description='Зв’яжіться з нами, щоб отримати професійну консультацію та індивідуальне рішення для вашого об’єкта.'
                         align='center'
                     />
 
@@ -32,10 +33,10 @@ function CooperationSection() {
                         </Button>
 
                         <Button
-                            to={`/#${HOME_SECTION_IDS.contact}`}
+                            href={PHONE_LINK}
                             variant='outline'
                         >
-                            Зв'язатися з нами
+                            Зв’язатися з нами
                         </Button>
                     </div>
                 </div>

@@ -1,11 +1,5 @@
 export const checklistItems = [
     {
-        id: 'full-cycle',
-        title: 'Комплексний підхід',
-        description:
-            'Виконуємо повний цикл робіт — від проєктування та монтажу до введення в експлуатацію й подальшого технічного обслуговування.',
-    },
-    {
         id: 'experienced-team',
         title: 'Досвідчена команда',
         description:

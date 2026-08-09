@@ -7,6 +7,7 @@ function Button({
     variant = 'primary',
     icon,
     to,
+    href,
     className = '',
     ...props
 }) {
@@ -21,6 +22,18 @@ function Button({
             {icon && <span className='button-icon'>{icon}</span>}
         </>
     );
+
+    if (href) {
+        return (
+            <a
+                href={href}
+                className={classes}
+                {...props}
+            >
+                {content}
+            </a>
+        );
+    }
 
     if (to) {
         return (

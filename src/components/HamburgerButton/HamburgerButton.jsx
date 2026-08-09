@@ -14,8 +14,8 @@ function HamburgerButton({
             }`}
             aria-label={
                 isOpen
-                    ? 'Close menu'
-                    : 'Open menu'
+                    ? 'Закрити меню'
+                    : 'Відкрити меню'
             }
             aria-expanded={isOpen}
             onClick={onClick}

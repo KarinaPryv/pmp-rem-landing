@@ -70,7 +70,7 @@ function ContactForm() {
                             </span>
                         </div>
                     ),
-                    error: 'Не вдалося надіслати повідомлення',
+                    error: 'Не вдалося надіслати повідомлення. Спробуйте ще раз або зателефонуйте нам напряму.',
                 },
             );
 
@@ -109,11 +109,11 @@ function ContactForm() {
                         </div>
 
                         <div className='form-group'>
-                            <label htmlFor='first_name'>Ім'я *</label>
+                            <label htmlFor='first_name'>Ім’я *</label>
                             <input
                                 {...register('first_name')}
                                 type='text'
-                                placeholder="Ваше ім'я"
+                                placeholder='Ваше ім’я'
                                 className={
                                     errors.first_name ? 'input-error' : ''
                                 }
@@ -127,7 +127,7 @@ function ContactForm() {
                     </div>
 
                     <div className='form-group'>
-                        <label htmlFor='email'>Email Address *</label>
+                        <label htmlFor='email'>Електронна пошта *</label>
                         <input
                             {...register('email')}
                             type='email'
@@ -146,7 +146,7 @@ function ContactForm() {
                         <input
                             {...register('company')}
                             type='text'
-                            placeholder="Назва організації (необов'язково)"
+                            placeholder='Назва організації (необов’язково)'
                         />
                     </div>
 
@@ -154,7 +154,7 @@ function ContactForm() {
                         <label htmlFor='message'>Повідомлення *</label>
                         <textarea
                             {...register('message')}
-                            placeholder="Коротко опишіть ваш проєкт, об'єкт або питання..."
+                            placeholder='Коротко опишіть ваш проєкт, об’єкт або питання...'
                             className={errors.message ? 'input-error' : ''}
                         />
                         {errors.message && (
