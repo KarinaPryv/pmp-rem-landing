@@ -31,105 +31,6 @@
     color: var(--text-secondary);
     line-height: 1.65;
 }
-/* 
-.service-card {
-    position: relative;
-    height: auto;
-    background-color: var(--light-gray);
-    padding: 2rem 1.5rem;
-    border-radius: 1.5rem;
-    text-align: center;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.service-icon {
-    color: var(--gold-glow);
-    fill: var(--gold-glow);
-    display: flex;
-    justify-content: center;
-}
-
-.service-icon svg {
-    width: 140px;
-    height: 140px;
-    transition: all 0.3s ease;
-}
-
-.circle-orbit {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    transform: translate(-50%, -50%) rotate(0deg);
-    transition: transform 0.8s cubic-bezier(0.55, 0, 0.1, 1);
-}
-
-.service-card:hover .service-icon,
-.service-card:focus-within .service-icon {
-    transform: rotate(-12deg) scale(1.2);
-}
-
-.service-card:hover .details,
-.service-card:focus-within .details {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.bg-circle {
-    position: absolute;
-    bottom: -375px;
-    left: -190px;
-    width: 340px;
-    height: 340px;
-    border-radius: 50%;
-    background: var(--dark-blue);
-    opacity: 0.18;
-
-    transform: translate(200px, 20px);
-    transition: all 1s;
-}
-
-.service-card:hover .circle-orbit,
-.service-card:focus-within .circle-orbit {
-    transform: translate(-100%, -100%) rotate(-110deg);
-}
-
-.service-card:hover .bg-circle,
-.service-card:focus-within .bg-circle {
-    opacity: 1;
-}
-
-.icon-wrapper {
-    position: relative;
-    z-index: 2;
-    transition: transform 0.3s ease;
-}
-
-.icon-wrapper img {
-    width: 140px;
-}
-
-h3 {
-    position: relative;
-    z-index: 2;
-    margin: 1rem 0;
-    color: var(--dark-blue);
-    font-size: 1.25rem;
-    font-weight: 600;
-}
-
-.short-desc {
-    position: relative;
-    z-index: 2;
-    margin-bottom: 2rem;
-    color: var(--text-tertiary);
-    font-size: 0.95rem;
-} */
 
 .service-card {
     padding: 22px 14px;
@@ -144,7 +45,7 @@ h3 {
 .service-card:hover {
     border-color: var(--blue-light);
     background: var(--bg-card-hover);
-    box-shadow: 0 14px 36px rgba(62, 114, 236, 0.14);
+    box-shadow: 0 14px 36px rgba(76, 140, 255, 0.14);
 }
 
 .service-icon {
@@ -160,7 +61,12 @@ h3 {
     flex-shrink: 0;
 }
 
+[data-theme='light'] .service-icon:not(svg) {
+    background: var(--gold-transparent);
+}
+
 .service-icon svg {
+    background: none;
     color: var(--gold-light);
     fill: var(--gold-light);
 }

@@ -22,7 +22,7 @@
 }
 
 .mobile-menu a:not(.button-primary):hover {
-    color: var(--gold);
+    color: var(--gold-heading);
 }
 
 .mobile-menu .button-primary {

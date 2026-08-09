@@ -13,11 +13,7 @@ function getStoredTheme() {
 }
 
 function applyTheme(theme) {
-    if (theme === THEME.light) {
-        document.documentElement.setAttribute('data-theme', THEME.light);
-    } else {
-        document.documentElement.removeAttribute('data-theme');
-    }
+    document.documentElement.setAttribute('data-theme', theme);
 }
 
 export function useTheme() {

@@ -11,13 +11,13 @@ function App() {
                 position='top-right'
                 gutter={16}
                 toastOptions={{
-                    duration: 4000000,
+                    duration: 4000,
 
                     className: 'app-toast',
 
                     success: {
                         iconTheme: {
-                            primary: '#C9973B',
+                            primary: '#FFA03C',
                             secondary: '#121822',
                         },
                     },

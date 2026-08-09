@@ -1,31 +1,32 @@
 :root {
     /* Background */
 
-    --bg-primary: #05070e;
-    --bg-secondary: #080c18;
-    --bg-tertiary: #0c1120;
+    --bg-primary: #070b1e;
+    --bg-secondary: #0a0f28;
+    --bg-tertiary: #0d1330;
 
-    --bg-card: #101826;
-    --bg-card-hover: #141f30;
+    --bg-card: #0e1430;
+    --bg-card-hover: #131a3d;
 
     /* Gold */
 
-    --gold: #c9973b;
-    --gold-light: #e6b85c;
+    --gold: #ffa03c;
+    --gold-light: #ffa03c;
+    --gold-heading: #ffa03c;
 
     --red: #c90202;
 
-    --gold-transparent: rgba(201, 151, 59, 0.12);
-    --gold-glow: rgba(201, 151, 59, 0.25);
+    --gold-transparent: rgba(255, 160, 60, 0.13);
+    --gold-glow: rgba(255, 160, 60, 0.35);
 
-    --border-gold: rgba(201, 151, 59, 0.28);
+    --border-gold: rgba(255, 160, 60, 0.3);
 
     /* Blue */
 
-    --blue: #3e72ec;
-    --blue-light: #6090ff;
+    --blue: #4c8cff;
+    --blue-light: #4c8cff;
 
-    --blue-transparent: rgba(62, 114, 236, 0.12);
+    --blue-transparent: rgba(76, 140, 255, 0.1);
 
     /* Text */
 
@@ -40,14 +41,12 @@
 
     /* Gradients */
 
-    --gradient-gold: linear-gradient(90deg, #c9973b 0%, #e6b85c 100%);
-
     --gradient-blue: linear-gradient(90deg, #3e72ec 0%, #6090ff 100%);
 
     --gradient-footer-top: linear-gradient(
         90deg,
-        var(--gold) 0%,
-        var(--blue-light) 100%
+        var(--blue) 0%,
+        var(--gold) 100%
     );
 
     --gradient-card: linear-gradient(
@@ -58,9 +57,15 @@
 
     --gradient-hero: radial-gradient(
         ellipse 80% 60% at 70% 40%,
-        rgba(62, 114, 236, 0.08) 0%,
+        rgba(76, 140, 255, 0.08) 0%,
         transparent 70%
     );
+
+    /* Hero circuit decoration */
+
+    --hero-circuit-trace: rgba(237, 240, 250, 0.055);
+    --hero-circuit-via: rgba(237, 240, 250, 0.09);
+    --hero-circuit-chip: rgba(237, 240, 250, 0.07);
 
     /* Typography */
 
@@ -87,6 +92,55 @@
     --radius-medium: 14px;
     --radius-large: 20px;
     --radius-extra-large: 28px;
+}
+
+[data-theme='light'] {
+    /* Background */
+
+    --bg-primary: #fafafc;
+    --bg-secondary: #eef0f4;
+    --bg-tertiary: #e4e7ed;
+
+    --bg-card: #ffffff;
+    --bg-card-hover: #fafbfd;
+
+    /* Gold */
+
+    --gold-light: #b85a0f;
+    --gold-heading: #c86a12;
+
+    --gold-transparent: rgba(184, 90, 15, 0.1);
+    --border-gold: rgba(184, 90, 15, 0.3);
+
+    /* Blue */
+
+    --blue: #2748c4;
+    --blue-light: #2748c4;
+
+    --blue-transparent: rgba(39, 72, 196, 0.1);
+
+    /* Text */
+
+    --text-primary: #12162a;
+    --text-secondary: #565f7a;
+    --text-tertiary: #9aa1b8;
+
+    /* Borders */
+
+    --border-primary: rgba(18, 22, 42, 0.06);
+    --border-secondary: rgba(18, 22, 42, 0.1);
+
+    /* Gradients */
+
+    --gradient-hero: radial-gradient(
+        ellipse 80% 60% at 70% 40%,
+        rgba(39, 72, 196, 0.08) 0%,
+        transparent 70%
+    );
+
+    --hero-circuit-trace: rgba(18, 22, 42, 0.02);
+    --hero-circuit-via: rgba(18, 22, 42, 0.035);
+    --hero-circuit-chip: rgba(18, 22, 42, 0.025);
 }
 
 @media (max-width: 960px) {

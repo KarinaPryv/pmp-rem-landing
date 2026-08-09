@@ -30,23 +30,15 @@ h5 {
 }
 
 .text-gold {
-    color: var(--gold);
+    color: var(--gold-heading);
 }
 
 .text-gradient-gold {
-    background: var(--gradient-gold);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
+    color: var(--gold-heading);
 }
 
 .text-gradient-blue {
-    background: var(--gradient-blue);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
+    color: var(--blue);
 }
 
 .container {
@@ -73,7 +65,7 @@ h5 {
 .app-toast {
     padding: 20px 22px !important;
 
-    background: #121822 !important;
+    background: var(--bg-card) !important;
     color: var(--text-primary) !important;
 
     border: 1px solid var(--gold-glow) !important;
@@ -83,14 +75,14 @@ h5 {
         0 16px 40px rgba(0, 0, 0, 0.35),
         0 0 0 1px rgba(255, 255, 255, 0.03) !important;
 }
-
-div[primary="#C9973B"] {
+/* 
+div[primary="#FFA03C"] {
     width: 28px;
     height: 28px;
     border-radius: 50%;
 }
 
-div[primary="#C9973B"]::after {
+div[primary="#FFA03C"]::after {
     left: 10px;
     bottom: 10px;
 }
@@ -100,7 +92,7 @@ div[primary="#C9973B"]::after {
 
 .app-toast--error {
     border-left: 4px solid var(--red) !important;
-}
+} */
 
 .toast-content {
     display: flex;

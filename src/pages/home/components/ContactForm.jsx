@@ -49,13 +49,12 @@ function ContactForm() {
     const onSubmit = async () => {
         try {
             await toast.promise(
-                // emailjs.sendForm(
-                //     import.meta.env.VITE_EMAILJS_SERVICE_ID,
-                //     import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-                //     form.current,
-                //     import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-                // ),
-                new Promise((resolve, reject) => setTimeout(resolve, 2000)),
+                emailjs.sendForm(
+                    import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+                    form.current,
+                    import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+                ),
                 {
                     loading: 'Надсилаємо повідомлення...',
                     success: (

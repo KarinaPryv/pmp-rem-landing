@@ -74,7 +74,7 @@
     width: 14px;
     height: 2px;
     border-radius: 2px;
-    background: var(--gradient-gold);
+    background: var(--gold-light);
     display: block;
     flex-shrink: 0;
 }
@@ -95,13 +95,13 @@
     width: 34px;
     height: 34px;
     flex-shrink: 0;
-    background: var(--gold-transparent);
-    border: 1px solid var(--border-gold);
+    background: var(--bg-card);
+    border: 1px solid var(--border-primary);
     border-radius: var(--radius-small);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--gold);
+    color: var(--text-primary);
     font-size: 0.85rem;
 }
 

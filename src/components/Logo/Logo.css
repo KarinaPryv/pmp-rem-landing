@@ -16,8 +16,31 @@
     width: 36px;
     height: 36px;
     border-radius: 9px;
-    background: var(--gradient-gold);
+    background: var(--gold);
     color: #120d00;
     font-size: 13px;
     font-weight: 900;
+}
+
+.logo-icon-bg {
+    fill: var(--bg-card);
+    stroke: var(--gold-heading);
+    transition:
+        fill var(--transition-medium),
+        stroke var(--transition-medium);
+}
+
+.logo-icon-bar-amber {
+    fill: var(--gold-heading);
+    transition: fill var(--transition-medium);
+}
+
+.logo-icon-bar-blue {
+    fill: var(--blue);
+    transition: fill var(--transition-medium);
+}
+
+.logo-icon-lever {
+    stroke: var(--text-primary);
+    transition: stroke var(--transition-medium);
 }
